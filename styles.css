@@ -1,0 +1,322 @@
+/* Resetting margins and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Roboto', sans-serif; /* Default font family */
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 1rem; /* Padding around the header content */
+    text-align: center; /* Center align header text */
+}
+
+#aHead {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-container {
+    max-width: 90%; /* Limiting header content width */
+    margin: 0 auto; /* Center aligning header content */
+}
+
+.head {
+    font-family: 'Playwrite ES Deco', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+}
+
+/* Content styles */
+.content-container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 90%; /* Adjusting max-width for smaller screens */
+    margin: 1rem auto; /* Centering content and adding spacing */
+    padding: 1.5rem;
+    background-color: #f9f9f9; /* Light gray background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
+}
+
+h3,
+h4 {
+    margin-top: 1.5rem; /* Adding space between headings */
+}
+
+ul {
+    list-style-type: disc; /* Bulleted list style */
+    padding-left: 2rem; /* Indentation for list items */
+}
+
+li {
+    margin-bottom: 0.5rem; /* Adding margin between list items */
+}
+
+p {
+    line-height: 1.6; /* Improved readability with increased line height */
+}
+
+/* CSS Button */
+.button-40 {
+    margin-left: 3%;
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1rem; /* Adjusted font size for better readability on smaller screens */
+    font-weight: 600;
+    line-height: 1.5;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+
+.button-40:hover {
+    background-color: #374151;
+}
+
+.button-40:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+    .button-40 {
+        padding: .75rem 1.5rem;
+    }
+}
+
+/* Form styles */
+.form-row {
+    margin-bottom: 1rem; /* Adjust margin between form rows */
+    display: flex; /* Use flexbox for responsive layout */
+    flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+}
+
+.form-group {
+    flex: 1 1 45%; /* Flex properties to control item width */
+    margin-right: 2%; /* Adjusted spacing between form groups */
+}
+
+.form-group label {
+    display: block; /* Display labels as blocks for better alignment */
+    margin-bottom: 0.5rem; /* Add some space below each label */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+    width: 100%; /* Ensure form inputs take full width */
+    padding: 0.5rem; /* Add padding to form inputs */
+    border: 1px solid #ccc; /* Basic border style */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    margin-top: 0.5rem; /* Adjust top margin for inputs */
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+    display: inline-block; /* Ensure radio buttons and checkboxes align properly */
+    vertical-align: middle; /* Align vertically in the middle */
+    margin-right: 0.5rem; /* Adjust spacing between radio buttons */
+}
+
+.form-row p {
+    width: 100%; /* Ensure paragraph takes full width */
+    text-align: center; /* Center align the paragraph */
+    margin-top: 1rem; /* Adjust top margin */
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-container,
+    .content-container {
+        max-width: 95%; /* Adjusting max-width for screens up to 1200px */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-container,
+    .content-container {
+        max-width: 100%; /* Adjusting max-width for smaller screens */
+        padding: 1rem; /* Smaller padding for content */
+    }
+
+    h3,
+    h4 {
+        margin-top: 1rem; /* Adjusting heading margins for smaller screens */
+    }
+
+    ul {
+        padding-left: 1.5rem; /* Adjusting list indentation for smaller screens */
+    }
+
+    .form-group {
+        flex: 1 1 100%; /* Full width for form groups on smaller screens */
+        margin-right: 0; /* No margin between form groups on smaller screens */
+    }
+
+    .form-group input[type="radio"],
+    .form-group input[type="checkbox"] {
+        display: inline-block; /* Ensure radio buttons and checkboxes align properly */
+        vertical-align: middle; /* Align vertically in the middle */
+        margin-right: 0.5rem; /* Adjust spacing between radio buttons */
+    }
+}
+
+/* CSS */
+.button-41 {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #00D775, #00BD68);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inter', -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+    height: 44px;
+    line-height: 44px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 9;
+    border: 0;
+    transition: background-color 0.2s ease-in-out; /* Adding transition for hover effect */
+}
+
+.button-41:hover {
+    background: #00bd68;
+}
+
+
+.content-container.smaller-container {
+    max-width: 50%; 
+}
+
+
+/* Ensure flexbox layout for .flex-container */
+.flex-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between; /* Space evenly between items */
+}
+
+.text-section {
+    flex: 1 1 50%; /* Take up 50% of the width */
+    margin-right: 2%; /* Margin between text and image section */
+    padding-left: 20px; /* Add left padding for text section */
+    display: flex; /* Use flexbox for text content */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center content vertically */
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-section h3 {
+    margin-top: 0; /* Remove top margin for consistency */
+    margin-left: 3%;
+}
+
+.text-section ul {
+    margin-top: 1rem; /* Adjust margin for list */
+}
+
+.text-section ul li{
+    margin-top: 1rem; /* Adjust margin for list */
+    margin-left: 5%;
+    font-size: 1.2rem;
+}
+
+
+.text-section p {
+    margin-bottom: 1rem; /* Adjust bottom margin for paragraphs */
+}
+
+.image-section {
+    flex: 1 1 20%; /* Take up 45% of the width */
+    position: relative; /* Position relative for absolute child */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.image-section img {
+    max-width: 100%; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Display as block element */
+}
+
+@media only screen and (max-width: 768px) {
+    .text-section,
+    .image-section {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-right: 0; /* No margin between sections */
+        padding-left: 0; /* Remove left padding on smaller screens */
+    }
+    .image-container {
+        max-height: 300px; /* Adjust maximum height for smaller screens if needed */
+    }
+}
+
+
+.image-gallery {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+    display: flex; /* Use flexbox to center images vertically */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.image-gallery img {
+    width: 100%; /* Ensure the image covers the container width */
+    height: 100%; /* Ensure the image covers the container height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
+}
+
+.image-gallery img:not(:first-child) {
+    opacity: 0; /* Hide all images except the first one */
+}
+
+
+.bg-success {
+    background-color: #28a745; /* Green background */
+}
+.bg-danger {
+    background-color: #dc3545; /* Red background */
+}
+.bg-dark {
+    background-color: #343a40; /* Dark background */
+}
+.text-white {
+    color: #fff; /* White text color */
+}
+
